@@ -2,6 +2,7 @@
 ## Funzione plot_dec_reg##
 from matplotlib.colors import ListedColormap
 import matplotlib.pyplot as plt
+import numpy as np
 def plot_dec_reg(X,y, classifier , resolution = 0.02 , test_idx=None):
     markers = ('s','x','o','^','v')
     colors = ('red' , 'blue' , 'lightgreen' , 'gray' , 'cyan')
