@@ -17,7 +17,7 @@ def plot_dec_reg(X,y, classifier , resolution = 0.02 , test_idx=None):
     plt.ylim(xx2.min() , xx2.max())
     
     for idx, cl , in enumerate(np.unique(y)):
-        plt.scatter(x=X[y==cl , 0],y=X[y==cl , 1], alpha=0.8 , c=colors[idx], marker=markers[idx], label=cl , edgecolor='black')
+        plt.scatter(x=X[y==cl , 0], y=X[y==cl , 1], alpha=0.8 , c=colors[idx], marker=markers[idx], label=cl , edgecolor='black')
         if test_idx:
             X_test , y_test = X[test_idx , :] , y[test_idx]
             plt.scatter(X_test[: , 0] , X_test[: , 1] , c='None' , 
